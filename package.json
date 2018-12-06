@@ -1,0 +1,36 @@
+{
+  "name": "koajs-typescript-starter",
+  "version": "1.0.0",
+  "description": "Stater template for KoaJs projects with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/bin/server.js",
+    "dev": "concurrently --kill-others \"tsc -w\" \"nodemon dist/server.js\"",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "clean": "rimraf dist/**/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmNalaka/koajs-typescript-starter.git"
+  },
+  "author": "Nalaka Manathunga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmNalaka/koajs-typescript-starter/issues"
+  },
+  "homepage": "https://github.com/mmNalaka/koajs-typescript-starter#readme",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.47",
+    "@types/koa-router": "^7.0.35",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.1"
+  }
+}
